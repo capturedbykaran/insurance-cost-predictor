@@ -48,9 +48,7 @@ if st.button("Predict Insurance Cost"):
 
     prediction = model.predict(input_df)[0]
 
-    st.success(
-        f"Estimated annual charges: {prediction:,.2f}"
-    )
+    st.success(f"Estimated annual charges: ₹{prediction:,.2f} per year")
     st.caption(
         "This is a machine-learning estimate, not an insurance quote."
     )
